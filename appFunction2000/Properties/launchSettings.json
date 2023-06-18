@@ -1,0 +1,9 @@
+﻿{
+  "profiles": {
+    "appFunction2000": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7274",
+      "launchBrowser": false
+    }
+  }
+}
