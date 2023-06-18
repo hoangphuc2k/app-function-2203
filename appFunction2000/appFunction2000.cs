@@ -90,8 +90,8 @@ namespace appFunction2000
 
         private static SqlConnection getConnection()
         {
-            return new SqlConnection("Server=tcp:appdb2000.database.windows.net,1433;Initial Catalog=appdb;Persist Security Info=False;User ID=sqladmin;Password=hoangphuc@123A;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-
+            var connectionString = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_SqlConnectionString");
+            return new SqlConnection(connectionString);
         }
     }
 }
